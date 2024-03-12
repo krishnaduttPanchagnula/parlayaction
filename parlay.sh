@@ -13,7 +13,7 @@ INPUT_INPUT_FILE_NAME=$2
 INPUT_OUTPUT_FILE_NAME=$3
 
 # Construct command
-full_command="./parlay.exe $INPUT_ENRICHER enrich $INPUT_INPUT_FILE_NAME > $INPUT_OUTPUT_FILE_NAME"
+full_command="parlay $INPUT_ENRICHER enrich $INPUT_INPUT_FILE_NAME > $INPUT_OUTPUT_FILE_NAME"
 eval "$full_command"
 
 # Check if the command was successful
