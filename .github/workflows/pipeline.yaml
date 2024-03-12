@@ -6,12 +6,9 @@ jobs:
     name: We test it locally with act
     steps:
       - name: Run parlay locally and get result
-        uses: ./
+        uses: krishnaduttPanchagnula/parlayaction@main
         id: parlay
         with:
           input_file_name: cyclonedx.json
           enricher: ecosystems
           output_file_name: enriched_cyclonedx.json
-
-      - name: Get the pokemon
-        run: echo "${{ steps.pokemon.outputs.pokemon_name }} attack"
