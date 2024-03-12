@@ -9,6 +9,6 @@ jobs:
         uses: krishnaduttPanchagnula/parlayaction@main
         id: parlay
         with:
-          input_file_name: cyclonedx.json
+          input_file_name: ./cyclonedx.json
           enricher: ecosystems
           output_file_name: enriched_cyclonedx.json
