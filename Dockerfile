@@ -10,7 +10,7 @@ RUN tar -xvf parlay_Linux_x86_64.tar.gz
 
 RUN mv parlay /usr/bin/parlay
 
-RUN ls /usr/bin
+RUN ls /usr/bin | grep parlay
 RUN parlay
 
 
@@ -19,7 +19,7 @@ RUN parlay
 COPY . .
 
 # change permission to execute the script and
-RUN chmod +x ./parlay.sh
+RUN chmod +x /entrypoint.sh
 
 # file to execute when the docker container starts up
-ENTRYPOINT ["/parlay.sh"]
+ENTRYPOINT ["/entrypoint.sh"]

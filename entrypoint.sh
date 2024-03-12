@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 # Check if all three arguments are provided
