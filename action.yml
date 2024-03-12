@@ -1,6 +1,8 @@
 # action.yaml
 name: "Parlay Github Action"
 description: "Runs Parlay on the given input file using the given enricher and outputs it in your given output file"
+icon: arrow-down-left
+color: gray-dark
 inputs:
   input_file_name:
     description: "Name of the input SBOM file to enrich"
