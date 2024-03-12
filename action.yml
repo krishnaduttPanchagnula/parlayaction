@@ -19,6 +19,6 @@ runs:
   using: "docker"
   image: "Dockerfile"
   args:
-    - ${{ inputs.input_file_name}}
-    - ${{ inputs.enricher}}
-    - ${{ inputs.output_file_name}}
+    - ${{ inputs.input_file_name }}
+    - ${{ inputs.enricher }}
+    - ${{ inputs.output_file_name }}
