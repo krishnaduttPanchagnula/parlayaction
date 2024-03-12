@@ -7,8 +7,8 @@ if [ "$#" -ne 3 ]; then
 fi
 
 # Extract arguments
-INPUT_ENRICHER=$1
-INPUT_INPUT_FILE_NAME=$2
+INPUT_INPUT_FILE_NAME=$1
+INPUT_ENRICHER=$2
 INPUT_OUTPUT_FILE_NAME=$3
 
 # Construct command
