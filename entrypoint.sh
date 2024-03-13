@@ -18,7 +18,7 @@ eval "$full_command"
 # Check if the command was successful
 if [ $? -eq 0 ]; then
     echo "Command executed successfully: $full_command"
-    cat $INPUT_OUTPUT_FILE_NAME
+    cat $INPUT_OUTPUT_FILE_NAME | jq .
 else
     echo "Error executing command: $full_command"
 fi

@@ -2,7 +2,7 @@
 FROM --platform=linux/amd64 alpine:latest
 
 # installes required packages for our script
-RUN apk add --no-cache bash wget
+RUN apk add --no-cache bash wget jq
 
 # Install parlay
 RUN wget https://github.com/snyk/parlay/releases/download/v0.1.4/parlay_Linux_x86_64.tar.gz 
